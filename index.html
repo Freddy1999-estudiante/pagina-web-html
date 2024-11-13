@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <style>
+        /* Estilos para el menú */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298); /* Fondo degradado azul */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Fondo abstracto */
+        .fondo-decorativo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, transparent 60%),
+                        radial-gradient(circle, rgba(255, 255, 255, 0.15) 10%, transparent 70%);
+            background-size: 150% 150%;
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        h1 {
+            color: #09e1e9dc;
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor para centrar las tarjetas */
+        .contenedor-tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        /* Estilos de tarjeta */
+        .tarjeta {
+            background: linear-gradient(145deg, #0aadca1c, #f0f0f0); /* Fondo en degradado tenue */
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 300px;
+            width: 100%;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Efecto al pasar el mouse */
+        .tarjeta:hover {
+            background: linear-gradient(145deg, #6a95ff, #5c85d6); /* Cambio a un degradado suave en azul */
+            color: #ffffff;
+            transform: translateY(-8px) scale(1.03); /* Eleva ligeramente */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .tarjeta h3 {
+            margin-top: 0;
+            color: #093c53;
+        }
+
+        .tarjeta:hover h3 {
+            color: #ffffff;
+        }
+
+        .tarjeta a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .tarjeta a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Fondo decorativo -->
+    <div class="fondo-decorativo"></div>
+
+    <h1>Menú Principal</h1>
+    <!-- Contenedor principal para las tarjetas -->
+    <div class="contenedor-tarjetas">
+        <div class="tarjeta">
+            <h3>Simulador</h3>
+            <p>Esto contiene ejercicios de los simuladores</p>
+            <a href="./simulador.html">Ejercicios de los Simuladores</a>
+        </div>
+
+        <div class="tarjeta">
+            <h3>NUMERO</h3>
+            <p>Esto contiene ejercicios de Número</p>
+            <a href="#">Ejercicios de los diferentes números</a>
+        </div>
+
+        <div class="tarjeta">
+            <h3>CADENAS</h3>
+            <p>Esto contiene ejercicios de Cadenas</p>
+            <a href="#">Ejercicios de Cadenas</a>
+        </div>
+
+        <div class="tarjeta">
+            <h3>ARREGLOS</h3>
+            <p>Contenido para los Arreglos.</p>
+            <a href="#">Ejercicios de Arreglos</a>
+        </div>
+    </div>
+</body>
+</html>
